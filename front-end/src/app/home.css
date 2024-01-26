@@ -1,0 +1,47 @@
+
+.area-aprender-conosco {
+  margin-top: 8vh;
+}
+  
+.botao-aprender {
+  color: white;
+  background: #682C0E;
+  border-radius: 10px;
+  width: 200px;
+  height: 44px;
+}
+  
+.dupla-noot {
+  width: 350px;
+  height: auto;
+}
+  
+.icon-image {
+  width: 110px !important;
+  height: 110px !important;
+}
+  
+.titulo-sec{
+  font-size: 40px;
+  font-weight:700;
+}
+  
+  
+/* ---------- Responsividade ------------------------------------ */
+
+@media (max-width: 990px) {
+  
+  .footer-resp {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .container-respons{
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+  }
+
+}
