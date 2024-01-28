@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center"> Estrutura de Frontend </h1>
 
-## Getting Started
+<p align="center">
+Universo Inclusivo 
+</p>
 
-First, run the development server:
+<p align="center">
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-green.svg"> <img alt="License" src="https://img.shields.io/badge/java_8-✓-blue.svg"> 
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🔖 Layout 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- ✅ **[Figma](https://www.figma.com/file/RkTlYh47vIrfy3EPmdJOkD/Education-website-Landing-page-%7C-Full-website-design-(Community)?type=design&node-id=0-1&mode=design&t=oHoIqrxrdPINB65G-0)**
 
-## Learn More
+![image](https://github.com/rxaviersantos/versionamento/assets/85380530/87d6dbb6-2202-44d9-9989-221ac6d19270)
 
-To learn more about Next.js, take a look at the following resources:
+Este é o repositório do frontend do projeto Universo Inclusivo. Este projeto visa proporcionar uma experiência inclusiva e acessível para a aprendizagem, conectando alunos a mentores especializados em diversas áreas.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Visão Geral
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+O frontend do Universo Inclusivo é uma aplicação web interativa que oferece diversas funcionalidades para alunos e mentores. A interface é projetada para proporcionar uma navegação intuitiva e fácil acesso a recursos essenciais.
 
-## Deploy on Vercel
+### Conteúdo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Home: Apresentação do Universo Inclusivo, missão, e visão geral.
+Sobre: Informações detalhadas sobre a empresa, projetos culturais, qualificações, empregabilidade e uso da tecnologia.
+Cursos: Catálogo de cursos disponíveis, organizados por categorias.
+Contato: Detalhes de contato da empresa e formulário para se conectar.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### Recursos Principais
+
+1. *Conectar-se:* Página de login com opção de login rápido usando o Google.
+2. *Dashboard:* Visão geral personalizada para cada usuário com ações rápidas.
+3. *Catálogo de Cursos:* Exploração fácil e rápida de cursos disponíveis.
+4. *Grid:* Exibição organizada de informações, como cursos e artigos.
+5. *Benefícios:* Destaque dos benefícios de participar do Universo Inclusivo.
+
+### Como Começar
+
+1. Faça o clone do repositório.
+2. Abra o projeto em um ambiente de desenvolvimento.
+3. Execute a aplicação em um servidor local.
+4. Conecte-se e explore os recursos disponíveis.
+
+### Contribuição
+
+Se você deseja contribuir para o desenvolvimento deste projeto, por favor, siga as diretrizes de contribuição no arquivo CONTRIBUTING.md.
+
+Contato
+Para mais informações, entre em contato conosco:
+
+- Endereço: Rua Presidente Vargas, 123-RJ
+  
+- Email: squad39recodepro@gmail.com
+  
+- Telefone: +21 3456-45678
+  
+© 2023 Universo Inclusivo. Todos os direitos reservados.
+
