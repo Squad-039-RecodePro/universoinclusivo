@@ -1,6 +1,36 @@
 'use client'
 
+import { useState } from "react";
+
 export default function Contato() {
+
+  const [ mensagem, setMensagem ] = useState('');
+
+  async function envia(formData: FormData) {
+    
+    const body = {
+      nome: formData.get('nome'),
+      email: formData.get('email'),
+      assunto: formData.get('assunto'),
+      mensagem: formData.get('mensagem'),
+    };
+
+    try {
+      let result = await fetch('http://localhost:8080/api/contato', {
+        method: 'POST',
+        body: JSON.stringify(body),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      setMensagem('Contato enviado!');
+
+    }
+    catch (e) {
+      setMensagem('Erro ao enviar contato.');
+    }
+  }
 
   return (
     <main>
@@ -15,47 +45,53 @@ export default function Contato() {
               <h2 className="contact-title">Entrar em Contato</h2>
             </div>
             <div className="col-lg-8">
-              <form className="form-contact contact_form" action="contact_process.php" method="post"
-                id="contactForm" noValidate={true}>
+              <form className="form-contact contact_form" action={envia}
+                id="contactForm" >
                 <div className="row">
                   <div className="col-12">
                     <div className="form-group">
 
-                      <textarea className="form-control input-group mb-3 w-100" name="message" id="message" 
+                      <textarea className="form-control input-group mb-3 w-100" 
+                        name="mensagem" id="mensagem" required
                         cols={30} rows={9} onFocus={(e) => e.target.placeholder = ''}
-                        onBlur={(e) => e.target.placeholder = 'Enter Message'}
+                        onBlur={(e) => e.target.placeholder = 'Digite a mensagem'}
                         placeholder='Digite a Mensagem'></textarea>
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="form-group input-group mb-3">
-                      <input className="form-control" name="name" id="name" type="text"
-                        onFocus={(e) => e.target.placeholder = ''}
-                        onBlur={(e) => e.target.placeholder = 'Enter your name'} 
+                      <input className="form-control" name="nome" id="nome" type="text"
+                        required onFocus={(e) => e.target.placeholder = ''}
+                        onBlur={(e) => e.target.placeholder = 'Digite seu nome'} 
                         placeholder='Digite seu Nome' />
                     </div>
                   </div>
                   <div className="col-sm-6">
                     <div className="form-group">
                       <input className="form-control input-group mb-3" name="email" id="email" type="email"
-                        onFocus={(e) => e.target.placeholder = ''}
-                        onBlur={(e) => e.target.placeholder = 'Enter email address'}
+                        required onFocus={(e) => e.target.placeholder = ''}
+                        onBlur={(e) => e.target.placeholder = 'Insira seu Email'}
                         placeholder='Insira seu Email' />
                     </div>
                   </div>
                   <div className="col-12">
                     <div className="form-group">
-                      <input className="form-control" name="subject" id="subject" type="text"
-                        onFocus={(e) => e.target.placeholder = ''} 
-                        onBlur={(e) => e.target.placeholder = 'Enter Subject'}
+                      <input className="form-control" name="assunto" id="assunto" type="text"
+                        required onFocus={(e) => e.target.placeholder = ''} 
+                        onBlur={(e) => e.target.placeholder = 'Digite o assunto'}
                         placeholder='Digite o Assunto' />
                     </div>
                   </div>
                 </div>
                 <div className="form-group mt-3">
                   <button type="submit" className=" mt-3 button btn btn-info button-contactForm btn_1">Enviar
-                    Mensagem</button>
+                    Mensagem
+                  </button>
                 </div>
+                <div>
+                  {mensagem}
+                </div>
+
               </form>
             </div>
             <div className=" mt-5 col-lg-4">
