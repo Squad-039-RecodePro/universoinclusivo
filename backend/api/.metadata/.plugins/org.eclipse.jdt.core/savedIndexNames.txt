@@ -1,0 +1,2 @@
+INDEX VERSION 1.134+C:\Users\Thiago Queiroz\Downloads\universoinclusivo-thiara (1)\universoinclusivo-thiara\backend\api\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
