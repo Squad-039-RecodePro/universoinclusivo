@@ -13,11 +13,11 @@ Bem-vindo ao backend do projeto Universo Inclusivo! Este README fornecerá infor
 
 Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados em sua máquina:
 
-- ava JDK 8 ou superior
+- Java JDK 8 ou superior
   
 - Maven
 
-- MySQL (com MySQL Workbench, opcional)
+- MySQL Workbench
 
 - Spring Boot
   
@@ -29,7 +29,7 @@ Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados 
 
 ```properties
 
-spring.datasource.url=jdbc:mysql://localhost:3306/universo_inclusivo
+spring.datasource.url=jdbc:mysql://localhost:3306/seu-bancodedados
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
